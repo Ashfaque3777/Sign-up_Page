@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="signUp">
+      <form action="#">
+        <h3>Sign Up</h3>
+        <h5>Already have an Account? <a href="#" id="aha">Sign in</a></h5>
+        <div class="inputBox">
+          <label for="email">Email ID*</label>
+          <input type="email" id="email" />
+          <div class="fornameInput">
+            <div class="fname">
+              <label for="fname">First Name*</label>
+              <input type="text" id="fname" />
+            </div>
+            <div class="lname">
+              <label for="lname">Last Name*</label>
+              <input type="text" id="lname" />
+            </div>
+          </div>
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" maxlength="10" />
+          <label for="pass">Password*</label>
+          <input type="password" id="pass" />
+        </div>
+        <div class="terms">
+          <input type="radio" id="radio" />
+          <p>
+            Accept all
+            <a href="#">Terms & Conditions</a>
+          </p>
+        </div>
+      </form>
+      <button id="signUpbtn">Sign Up</button>
+    </div>
+
+    <div class="signIn">
+      <form action="#">
+        <h3>Sign In</h3>
+        <h5>
+          I don't Have An Account? <a href="#" id="nhcaa">Create An Account</a>
+        </h5>
+        <div class="inputBox">
+          <label for="email">Email ID* </label>
+          <input type="email" id="email" />
+          <label for="pass">Password</label>
+          <input type="password" id="pass" />
+          <p><a href="#" id="frgtLink">Forget Password</a></p>
+        </div>
+      </form>
+      <button id="signInbtn">Sign In</button>
+    </div>
+
+    <div class="frgtPage">
+      <h3>Forget Password</h3>
+      <h5>No I Remember? <mark>Go back</mark></h5>
+      <form action="#">
+        <div class="inputBox">
+          <label for="email">Enter Email*</label>
+          <input type="email" id="email" />
+          <label for="otp">Enter OTP*</label>
+          <input type="tel" id="otp" maxlength="6" />
+          <label for="pass">New Password*</label>
+          <input type="password" id="pass" />
+          <label for="pass">New Password confirmation*</label>
+          <input type="password" id="passC" />
+        </div>
+      </form>
+      <button id="resetBtn">Reset Password</button>
+    </div>
+    <script src="logic.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </body>
+</html>
